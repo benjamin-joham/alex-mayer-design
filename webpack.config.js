@@ -8,7 +8,7 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const glob = require('glob');
 const path = require('path');
 
-const themeName = 'alex';
+const themeName = 'alex-mayer';
 const themeFolder = `public/wp-content/themes/${themeName}`;
 const phpServerUrl = `${themeName}.localhost`
 

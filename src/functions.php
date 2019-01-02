@@ -10,4 +10,10 @@ function add_title_tag() {
     add_theme_support( 'title-tag' );
 }
 add_action( 'after_setup_theme', 'add_title_tag');
+
+// function alex_mayer_theme_setup() {
+//     add_theme_support('menus');
+//     register_nav_menu('primary', 'Primary Header Navigation');
+// }
+// add_action('init', 'alex_mayer_theme_setup');
 ?>
