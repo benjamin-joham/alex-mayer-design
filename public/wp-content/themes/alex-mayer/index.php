@@ -17,7 +17,7 @@
             </section>
 
             <section id='news'>
-                <h2>News</h2>
+                <h2>Newsss</h2>
 
                 <?php 
                 if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

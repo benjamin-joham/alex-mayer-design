@@ -4,10 +4,12 @@ namespace Deployer;
 require 'recipe/common.php';
 
 // Project name
-set('application', 'alex-mayer');
+set('application', 'alex');
 
 // Project repository
-set('repository', 'https://github.com/Benni2808/alex-mayer-design.git');
+// set('repository', 'https://github.com/Benni2808/alex-mayer-design.git');
+
+set('repository', 'https://github.com/Benni2808/alex-mayer-die-zweite.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true); 
@@ -23,7 +25,7 @@ set('allow_anonymous_stats', false);
 
 // Hosts
 
-host('root@165.227.142.38')
+host('root@139.59.157.173')
     ->set('deploy_path', '/var/www/{{application}}');    
 
 
