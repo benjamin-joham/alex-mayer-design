@@ -7,7 +7,7 @@ require 'recipe/common.php';
 set('application', 'alex');
 
 // Project repository
-set('repository', 'YOUR_REPOSITORY');
+set('repository', 'https://github.com/Benni2808/alex-mayer-design.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true); 
@@ -23,7 +23,7 @@ set('allow_anonymous_stats', false);
 
 // Hosts
 
-host('YOUR_USER@YOURHOST')
+host('root@165.227.142.38')
     ->set('deploy_path', '/var/www/{{application}}');    
 
 
