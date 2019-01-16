@@ -7,9 +7,9 @@ require 'recipe/common.php';
 set('application', 'alex');
 
 // Project repository
-// set('repository', 'https://github.com/Benni2808/alex-mayer-design.git');
+set('repository', 'https://github.com/Benni2808/alex-mayer-design.git');
 
-set('repository', 'https://github.com/Benni2808/alex-mayer-die-zweite.git');
+//set('repository', 'https://github.com/Benni2808/alex-mayer-die-zweite.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true); 
@@ -25,7 +25,7 @@ set('allow_anonymous_stats', false);
 
 // Hosts
 
-host('root@139.59.157.173')
+host('root@157.230.30.51')
     ->set('deploy_path', '/var/www/{{application}}');    
 
 

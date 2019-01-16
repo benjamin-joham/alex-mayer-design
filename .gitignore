@@ -40,7 +40,6 @@ wp-content/*
 wp-content/mu-plugins/*
 wp-content/plugins/*
 wp-content/themes/*
-
 # ignore all files starting with . or ~
 .*
 ~*
