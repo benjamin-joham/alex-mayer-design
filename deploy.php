@@ -4,7 +4,7 @@ namespace Deployer;
 require 'recipe/common.php';
 
 // Project name
-set('application', 'alex');
+set('application', 'alex-mayer');
 
 // Project repository
 set('repository', 'https://github.com/Benni2808/alex-mayer-design.git');
