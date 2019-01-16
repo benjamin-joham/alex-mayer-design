@@ -42,11 +42,11 @@
         <link href="https://fonts.googleapis.com/css?family=Slabo+13px" rel="stylesheet">
         <?php wp_head(); ?>
     </head>
-    <body>
+    <body <?php body_class(); ?>>
 
-<?php global $query_string; echo $query_string; ?>
+    <p id="debug"><?php global $query_string; echo $query_string; ?></p>
       <header>
-            <h1><a href='#'>Alex Mayer</a></h1>
+            <h1><a href='/'>Alex Mayer</a></h1>
             <nav>
                 <input type="checkbox" id="button" />
                 <label for="button" onclick></label>
@@ -55,13 +55,15 @@
                         <span class="hamburger-inner"></span>
                     </span>
                 </button>
-                <ul>
+                <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+
+                <!-- <ul>
                     <li class='current-menu-item'><a href='#'>Start</a></li>
-                    <li><a href='test'>Leistungen</a></li>
+                    <li><a href='#''>Leistungen</a></li>
                     <li><a href='#'>Blog</a></li>
                     <li><a href='#'>Über mich</a></li>
                     <li><a href='#'>Kontakt</a></li>
-                </ul>
+                </ul> -->
             </nav>
 
             <section id='hero'>

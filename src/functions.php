@@ -6,10 +6,15 @@ function enqueue_scripts_and_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts_and_styles' );
 
-// function add_title_tag() {
-//     add_theme_support( 'title-tag' );
-// }
-// add_action( 'after_setup_theme', 'add_title_tag');
+function add_title_tag() {
+    add_theme_support( 'title-tag' );
+    add_theme_support('post-thumbnails');
+    add_theme_support('menus');
+    register_nav_menu('header-menu', 'Main');
+}
+add_action( 'after_setup_theme', 'add_title_tag');
+
+
 
 // function alex_mayer_theme_setup() {
 //     add_theme_support('menus');
