@@ -5,11 +5,7 @@
         </div>
         
         <div>
-            
-                <?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
-            
-            <!-- <a href='impressum'>Impressum</a>
-            <a href='datenschutz'>Datenschutzerklärung</a> -->
+            <?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
         </div>
         <div>
             <p>Demo-Wordpress-Seite im Rahmen der LV ‚Content Mangagement Systeme‘ an der FH Salzburg von Vorname Nachname und Vorname Nachname</p> 

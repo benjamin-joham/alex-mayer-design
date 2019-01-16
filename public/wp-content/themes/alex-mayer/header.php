@@ -44,7 +44,7 @@
     </head>
     <body <?php body_class(); ?>>
 
-    <p id="debug"><?php global $query_string; echo $query_string; ?></p>
+    <!-- <p id="debug"><?php global $query_string; echo $query_string; ?></p> -->
       <header>
             <h1><a href='/'>Alex Mayer</a></h1>
             <nav>
