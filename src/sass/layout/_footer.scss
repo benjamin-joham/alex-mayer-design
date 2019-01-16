@@ -11,7 +11,9 @@ footer {
     flex-wrap: wrap;
     div {
       &:nth-of-type(2) {
-        text-align: right;
+        div{
+          text-align: right;
+        }
       }
       &:nth-of-type(3) {
         margin-top: $standardp;
@@ -27,20 +29,26 @@ footer {
     margin: 0;
   }
 
-  a {
-    color: white;
-    border-right: 1px solid white;
-    padding: 0 $standardp / 2;
-    &:first-of-type {
-      padding-left: 0;
-    }
+  div ul {
+    list-style-type: none;
+    li {
+      a {
+        color: white;
+      }
+      display: inline;
+      border-right: 1px solid white;
+      padding: 0 $standardp / 2;
+      &:first-of-type {
+        padding-left: 0;
+      }
 
-    &:last-of-type {
-      border-right: none;
-      padding-right: 0;
-    }
-    &:hover {
-      border-bottom: none;
+      &:last-of-type {
+        border-right: none;
+        padding-right: 0;
+      }
+      &:hover {
+        border-bottom: none;
+      }
     }
   }
   ul {

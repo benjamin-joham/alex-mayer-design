@@ -10,7 +10,8 @@ function add_title_tag() {
     add_theme_support( 'title-tag' );
     add_theme_support('post-thumbnails');
     add_theme_support('menus');
-    register_nav_menu('header-menu', 'Main');
+    register_nav_menu('header-menu', 'header');
+    register_nav_menu('footer-menu', 'footer');
 }
 add_action( 'after_setup_theme', 'add_title_tag');
 
