@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-  <section id="news">
+  <section>
     <?php while ( have_posts() ) : the_post(); ?>
     <div>
       <h2><?php the_title(); ?></h2>

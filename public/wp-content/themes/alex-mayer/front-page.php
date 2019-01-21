@@ -8,6 +8,7 @@
                 <article>
                     <h3><?php the_title(); ?></a></h3>
                     <?php the_post_thumbnail(); ?>
+                    <p><?php edit_post_link(); ?></p>
                 </article>
                 <?php endwhile; endif; ?>
 
@@ -32,7 +33,7 @@
                 if ( $news_query -> have_posts() ) : while ( $news_query -> have_posts() ) : $news_query -> the_post(); ?>
                 <article>
                     <h3><a href='<?php echo get_permalink(); ?>'><?php the_title(); ?></a></h3>
-                    <p><?php the_content('[mehr erfahren]'); ?></p>
+                    <p><?php the_content('[mehr erfahren]'); edit_post_link();?></p>
                     </article>
                 <?php endwhile; endif; ?>
             <!-- 
@@ -51,6 +52,7 @@
                     <?php the_post_thumbnail(); ?>
                     <p><cite><?php the_field('name'); ?><br><?php the_field('firma'); ?></cite></p>
                     <blockquote><p><?php the_field('zitat'); ?></p></blockquote>
+                    <p><?php edit_post_link(); ?></p>
                     </article>
                 <?php endwhile; endif; ?>
                 <!-- <article>
