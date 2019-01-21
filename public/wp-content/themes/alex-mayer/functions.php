@@ -1,8 +1,8 @@
 <?php
 // enqueue scripts and styles
 function enqueue_scripts_and_styles() {
-    wp_enqueue_style('main-styles', get_template_directory_uri().'/style.7da55ce5b05947e48896.css?cd82f4dddb8cd8ba99bf', array(), null, false);
-    wp_enqueue_script( 'main-js', get_template_directory_uri().'/main.b08ad62039598a3bf8f0.js?cd82f4dddb8cd8ba99bf', array(), null, false );
+    wp_enqueue_style('main-styles', get_template_directory_uri().'/style.18b188decdd06e09bd5e.css?5e4c7c47cb5fb199720d', array(), null, false);
+    wp_enqueue_script( 'main-js', get_template_directory_uri().'/main.1f3b7c6dc1c68fbbed0d.js?5e4c7c47cb5fb199720d', array(), null, false );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts_and_styles' );
 

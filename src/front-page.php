@@ -51,8 +51,7 @@
                 <article>
                     <?php the_post_thumbnail(); ?>
                     <p><cite><?php the_field('name'); ?><br><?php the_field('firma'); ?></cite></p>
-                    <blockquote><p><?php the_field('zitat'); ?></p></blockquote>
-                    <p><?php edit_post_link(); ?></p>
+                    <blockquote><p><?php the_field('zitat'); edit_post_link();?></p></blockquote>
                     </article>
                 <?php endwhile; endif; ?>
                 <!-- <article>
