@@ -4,13 +4,16 @@
             <h2>Leistungen</h2>
             <?php 
             $leistungen_query = new WP_Query(array('category_name' => 'leistungen', 'posts_per_page' => 3, 'order' => 'ASC'));
-            if ( $leistungen_query -> have_posts() ) : while ( $leistungen_query -> have_posts() ) : $leistungen_query -> the_post(); ?>
-            <article>
-                <h3><?php the_title(); ?></a></h3>
-                <?php the_post_thumbnail(); ?>
-                <p><?php edit_post_link(); ?></p>
-            </article>
-            <?php endwhile; endif; ?>
+            if ( $leistungen_query -> have_posts() ) :
+                while ( $leistungen_query -> have_posts() ) :
+                    $leistungen_query -> the_post(); ?>
+                <article>
+                    <h3><?php the_title(); ?></a></h3>
+                    <?php the_post_thumbnail(); ?>
+                    <p><?php edit_post_link(); ?></p>
+                </article>
+            <?php endwhile;
+            endif; ?>
 
             <!-- <article>
                 <h3>Design</h3>

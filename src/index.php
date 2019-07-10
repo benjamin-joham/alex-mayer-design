@@ -20,23 +20,25 @@
                 <h2>Newsss</h2>
 
                 <?php 
-                if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                <article>
-                    <h3><a href='<?= the_title(); ?>'><?= the_title(); ?></a></h3>
-                    <?php $content = the_content();
-                    if ($content.length > 10) {
-                        $content = substr($content, 0, 10);
-                        echo $content;
-                    }
-                    else {
-                        echo $content;
-                    }
-                    //get_template_part( 'content', get_post_format() );
-                    ?>
-                    <a href='#'>[mehr erfahren]</a>
-                    </article>
-                <?php endwhile; endif; 
-                ?>
+                if ( have_posts() ) :
+                    while ( have_posts() ) :
+                        the_post(); ?>
+                        <article>
+                            <h3><a href='<?= the_title(); ?>'><?= the_title(); ?></a></h3>
+                            <?php $content = the_content();
+                            if ($content.length > 10) {
+                                $content = substr($content, 0, 10);
+                                echo $content;
+                            }
+                            else {
+                                echo $content;
+                            }
+                            //get_template_part( 'content', get_post_format() );
+                            ?>
+                            <a href='#'>[mehr erfahren]</a>
+                            </article>
+                <?php endwhile;
+                endif; ?>
             <!-- 
 
                 
@@ -44,6 +46,7 @@
             -->
             </section>
 
+            <!-- GRID -->
             <section id='referenzen'>
                 <h2>Referenzen</h2>
                 <article>
